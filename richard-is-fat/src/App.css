@@ -1,0 +1,11 @@
+.banner {
+    line-height: 40px;
+    text-align: center;
+
+    color: #f2f2f2;
+
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #49b975, #31acca);
+    padding: 4.5rem 2rem;
+    margin-bottom: 0.5rem;
+}
