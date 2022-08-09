@@ -3,10 +3,7 @@ import Input from '@mui/material/Input';
 
 import Paper from "@mui/material/Paper";
 
-import Mui5search from "mui5-search";
-
-
-
+import { Stack } from "@mui/material"
 
 function Searchbar({ placeholder, onChange}) {
 
@@ -17,13 +14,10 @@ function Searchbar({ placeholder, onChange}) {
 
         <SearchIcon />
 
-        <Paper>
-            <Input 
-                placeholder = {placeholder}
-                onChange = {onChange}
-            />
-
-        </Paper>
+        <Input 
+            placeholder = {placeholder}
+            onChange = {onChange}
+        />
         
     </div>
   );

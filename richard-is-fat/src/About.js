@@ -7,31 +7,21 @@ import Searchbar from './components/Searchbar'
 import './App.css';
 
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
-import About from "./About"
-import Results from "./Results"
 
-function App() {
+function About() {
 
   const handleChange = (value) => {
     console.log(value);
   };
 
   return (
+    
 
     <div>
-      <div className="banner">
-
-      </div>
-      <Nav />
-
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/Results" element={<Results />} />
-      </Routes>
-
+        <Typography variant = "h1">fuck richard</Typography>
 
     </div>
   );
 }
 
-export default App;
+export default About;
