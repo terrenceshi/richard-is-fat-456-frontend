@@ -1,23 +1,40 @@
-import { Typography } from '@mui/material';
-
 import BasicPagination from './components/BasicPagination'
+import MuiCard from './components/MuiCard';
 
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
+import { Stack, Box } from '@mui/material';
 
 function Results() {
 
   return (
-    
 
     <div>
-        <Typography variant = "h1">fuck richard2</Typography>
+
+      <Box sx={{mt: 4}}>
+        <Stack spacing={5} justifyContent="center" >
+
+          <Stack direction="row" justifyContent="center" spacing={3}>
+            <MuiCard />
+            <MuiCard />
+            <MuiCard />
+          </Stack>
+
+          <Stack direction="row" justifyContent="center" spacing={3}>
+            <MuiCard />
+            <MuiCard />
+            <MuiCard />
+          </Stack>
 
         <BasicPagination />
 
+        </Stack>
+      </Box>
+
+      
+
     </div>
+
+        
+
   );
 }
 

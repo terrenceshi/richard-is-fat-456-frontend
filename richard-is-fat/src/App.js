@@ -1,30 +1,39 @@
-import { Typography } from '@mui/material';
-import Box from '@mui/material/Box';
-
-import MuiCard from './components/MuiCard';
 import Nav from './components/Nav';
 import Searchbar from './components/Searchbar'
+
 import './App.css';
 
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
+import Home from "./Home"
 import About from "./About"
 import Results from "./Results"
 
-function App() {
+import { Stack, IconButton } from '@mui/material';
+import AccessibleIcon from '@mui/icons-material/Accessible';
 
-  const handleChange = (value) => {
-    console.log(value);
-  };
+function App() {
 
   return (
 
     <div>
       <div className="banner">
+        {/* <IconButton>
+          <AccessibleIcon />
+        </IconButton> */}
 
+        <Stack direction="row" justifyContent="flex-end" className = "navbar">
+          <Searchbar/>
+        </Stack>
+        
       </div>
-      <Nav />
+
+      <div classname="navbar">
+        <Nav />
+      </div>
+      
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Results" element={<Results />} />
       </Routes>
